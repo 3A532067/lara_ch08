@@ -34,3 +34,6 @@ Route::group(['prefix'=>'student'],function(){
 
 Route::get('/','HomeController@index');
 
+Route::get('cool','Cool\TestController@index');
+
+
