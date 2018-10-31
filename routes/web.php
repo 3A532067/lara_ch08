@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 
 Route::pattern('student_no','s[0-9]{10}');
@@ -36,3 +34,4 @@ Route::group(['prefix'=>'student'],function(){
 });
 
 
+Route::get('/','HomeController@index');
