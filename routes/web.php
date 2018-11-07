@@ -40,4 +40,4 @@ Route::group(['namespace'=>'cool'],function(){
 
 });
 
-
+Route::get('/board', 'BoardController@getIndex');
