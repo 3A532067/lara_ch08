@@ -37,9 +37,9 @@
 					<td>{{$score->english}}</td>
 					<td>{{$score->math}}</td>
 					<td>{{$score->total}}</td>
-					{{--<td>--}}
-						{{--<a class="btn btn-default btn-sm" href="{{ route('student',['student_no'=>'s1234567890']) }}">查看學生資料</a>--}}
-					{{--</td>--}}
+					<td>
+						<a class="btn btn-default btn-sm" href="{{ route('student',['student_no'=>$score->student->no]) }}">查看學生資料</a>
+					</td>
 				</tr>
 				@endforeach
 				</tbody>
